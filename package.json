@@ -17,7 +17,8 @@
     "JSONPath": "^0.10.0",
     "gulp-util": "^3.0.6",
     "through2": "^2.0.0",
-    "xml2js": "^0.4.12"
+    "xml2js": "^0.4.12",
+    "gulp-rename": "^1.3.0"
   },
   "devDependencies": {
     "gulp": "^3.9.0"
