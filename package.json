@@ -12,8 +12,7 @@
     "json",
     "gulp"
   ],
-  "author": "",
-  "license": "WTF",
+  "author": "Antoine Bluchet & Daniel Farkas",
   "dependencies": {
     "JSONPath": "^0.10.0",
     "gulp-util": "^3.0.6",
