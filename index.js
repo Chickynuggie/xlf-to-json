@@ -15,13 +15,11 @@ function xliff2json(file, encoding, cb) {
 
     var results = {}
 
-    var identifiers = jsonpath.eval(json, "$..trans-unit..$.id")
-    var sources = jsonpath.eval(json, "$..trans-unit..source[0]")
-    var targets = jsonpath.eval(json, "$..trans-unit..target[0]")
-    // var language = jsonpath.eval(json, "$..target-language")
+    var identifiers = jsonpath.eval(json, "$..trans-unit..$.id");
+    var targets = jsonpath.eval(json, "$..trans-unit..target[0]");
 
     identifiers.forEach(function(e, i) {
-      results[sources[i]] = targets[i] 
+      results[identifiers[i]] = targets[i]
     })
 
     file.path = gutil.replaceExtension(file.path, '.json')
